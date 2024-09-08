@@ -13,15 +13,20 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: "Guides",
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: "Example Guide", slug: "guides/example" },
-					],
+					label: "Getting Started",
+					autogenerate: { directory: "getting-started" },
 				},
 				{
-					label: "Reference",
-					autogenerate: { directory: "reference" },
+					label: "API",
+					autogenerate: { directory: "api" },
+				},
+				{
+					label: "Modding Guidance",
+					autogenerate: { directory: "modding-guidance" },
+				},
+				{
+					label: "Contributing",
+					autogenerate: { directory: "contributing" },
 				},
 			],
 		}),
