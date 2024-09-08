@@ -7,9 +7,15 @@ export default defineConfig({
 	site: "https://lc-contentlib.github.io",
 	integrations: [
 		starlight({
-			title: "My Docs",
+			title: "ContentLib",
+			logo: {
+				src: './public/favicon.svg',
+			},
 			social: {
-				github: "https://github.com/withastro/starlight",
+				github: "https://github.com/lc-contentlib",
+			},
+			editLink: {
+				baseUrl: "https://github.com/lc-contentlib/lc-contentlib.github.io/edit/main/"
 			},
 			sidebar: [
 				{
