@@ -24,15 +24,19 @@ from in-game entities to in-game items. The API project itself works exclusively
 This approach provides **two key advantages**:
 
 1. **Simplified Core Logic Maintenance**:  
-   Interfaces enable core systems (e.g., the Entity Manager) to operate independently of specific implementations.
-2. This means that any instance implementing the expected interface can be handled uniformly. For example, player
-3. registration and enemy registration use the same underlying function because both entities adhere to the same interface.
+   Interfaces enable core systems (e.g., the Entity Manager) to operate independently of specific implementations. This
+means that any instance implementing the expected interface can be handled uniformly. 
+    
+    For example, player registration
+and enemy registration use the same underlying function because both entities adhere to the same interface.
 
 2. **Ease of Mod Maintenance During Updates**:  
-   When Lethal Company is updated, mod makers typically do not need to rewrite or adjust their mods. They only
-3. need to update the dependency to the latest API version. Even if implementation details change significantly
-4. to meet interface functionality, mod developers are shielded from this complexity. They only interact with 
-5. the interface's defined functionality.
+   When Lethal Company is updated, mod makers, even those using APIs, typically need to rewrite or adjust their mods.
+
+    In ContentLib, if implementation details change significantly post-update, mod developers are shielded from this 
+complexity. They only interact with the interface's defined functionality. 
+
+    Hence, nothing more than a dependency update would be required for mods to work with newly updated API versions. 
 
 ---
 
@@ -41,7 +45,7 @@ To ensure consistent, high-quality contributions and maintain the flexibility of
 the following requirements must be adhered to:
 
 1. **Interface-Centric Design**:
-    - All API logic (anything that ends up in ```LC-COntentLib/src/ContentLib.API/Model``` must be defined in terms of
+    - All API logic (anything that ends up in ```LC-ContentLib/src/ContentLib.API/Model``` must be defined in terms of
 interfaces. Hardcoding class-specific logic directly into the API in not acceptable.
     - Implementations should fulfill the contract defined by the interface without introducing unrelated behavior.
 
