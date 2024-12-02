@@ -45,7 +45,7 @@ To ensure consistent, high-quality contributions and maintain the flexibility of
 the following requirements must be adhered to:
 
 1. **Interface-Centric Design**:
-    - All API logic (anything that ends up in ```LC-ContentLib/src/ContentLib.API/Model``` must be defined in terms of
+    - All API logic (anything that ends up in ```LC-ContentLib/src/ContentLib.API/Model``` ) must be defined in terms of
 interfaces. Hardcoding class-specific logic directly into the API in not acceptable.
     - Implementations should fulfill the contract defined by the interface without introducing unrelated behavior.
 
