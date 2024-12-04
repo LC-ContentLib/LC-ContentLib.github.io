@@ -16,9 +16,7 @@ consistency, flexibility, and maintainability.
 
 ### **API Structure**
 
-*FLOWCHART GOES HERE*
-
-As illustrated in the figure above, ContentLib defines all its API logic in terms of interfaces, encompassing everything
+As explained in the [interfaces article](../../api/core-concepts/interfaces/), ContentLib defines all its API logic in terms of interfaces, encompassing everything
 from in-game entities to in-game items. The API project itself works exclusively with interfaces.
 
 This approach provides **two key advantages**:
